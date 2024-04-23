@@ -45,15 +45,15 @@ From here as simple as
 ```bash
 cgrep "func("
 
-// Response example:
-
-// cmd/find.go
-// 50:     visitAllFilesInDir(wd, func(pathToFile string) {
-// 59: func visitAllFilesInDir(wd string, funcPathToFile func(pathToFile string)) {
-// 60:     err := filepath.Walk(wd, func(path string, file fs.FileInfo, err error) error {
-
-// cmd/root.go
-// 19:     // Run: func(cmd *cobra.Command, args []string) { },
+# Response example:
+#
+# cmd/find.go
+# 50:     visitAllFilesInDir(wd, func(pathToFile string) {
+# 59: func visitAllFilesInDir(wd string, funcPathToFile func(pathToFile string)) {
+# 60:     err := filepath.Walk(wd, func(path string, file fs.FileInfo, err error) error {
+#
+# cmd/root.go
+# 19:     // Run: func(cmd *cobra.Command, args []string) { },
 ```
 
 Future work
